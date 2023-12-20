@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-gray-100 grid place-content-center h-screen">
+    <div class="bg-teal-500 rounded-md shadow-md p-4 text-center">
+      <h1 class="text-white text-3xl mb-4">Tic Tac Toe</h1>
+
+      <div id="game-board" class="grid grid-cols-3 gap-1"></div>
+      <p id="game-status" class="text-white my-4">Player 1's turn</p>
+
+      <button id="game-btn" class=" bg-white text-teal-500 rounded-md py-2 px-3">
+        Reset Game
+      </button>
+    </div>
+
+    <template id="game-cell">
+      <div
+        class="bg-gray-300 h-16 w-16 rounded-md flex items-center justify-center text-xl font-bold"
+      ></div>
+    </template>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
